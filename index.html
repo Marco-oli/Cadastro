@@ -16,35 +16,38 @@
             <h1>Cadastro de Usuário</h1>
             <span class="mdi mdi-book-open-page-variant" alt="agenda-telefonica"></span>
         </header>
-        <form id="corpo" action="database.php" method="POST" >
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" />
-            </div>
-            <div>
-                <label for="telefone">Telefone:</label>
-                <input type="number" id="telefone" />
-            </div>
-            <div>
-                <label for="endereço">Endereço:</label>
-                <input type="text" id="endereço" />
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" />
-            </div>
-            <div id="radio">
-                <label>Sexo:</label>
-                <label class="label">Masculino<input type="radio" name="sexo" value="masculino"/></label>
-                <label class="label dir">Feminino<input type="radio" name="sexo" value="feminino" /></label>
-            </div>
+        <form id="corpo" />
+        <div class="alinhar">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+        </div>
+        <div class="alinhar">
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" />
+        </div>
+        <div class="alinhar">
+            <label for="endereço">Endereço:</label>
+            <input type="text" id="endereço" />
+        </div>
+        <div class="alinhar">
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
+        </div>
+        <div class="alinhar " id="radio">
+            <label>Sexo:</label>
+        </div>
+        <div class="alinhar">
+            <label class="label">Masculino<input class="texto" type="radio" name="sexo" value="masculino" /></label>
+            <label class="label dir">Feminino<input class="texto" type="radio" name="sexo" value="feminino" /></label>
+        </div>
+        <div id="mensagem">
+            <span id="MsgErro">Preencha este campo</span>
+        </div>
+        <div>
+            <button id="btn" value="Cadastrar" onclick="validar()">Cadastrar</button>
+        </div>
         </form>
 
-        <div id="mensagem">
-            <span id="MsgErro"></span>
-            
-        </div>
-        <input id="btn" type="submit" value="Cadastrar" onclick="validar()">
 
         <script type="text/javascript" src="./js/index.js"></script>
     </div>
