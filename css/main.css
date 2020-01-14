@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
     background-color: #DCDCDC;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
 
@@ -11,11 +17,8 @@ body {
     background-color: #fff;
     border: 1px black solid;
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    max-width: 40%;
+    padding: 10px;
     height: 570px;
-    margin: auto;
-    margin-top: 250px;
     box-sizing: border-box;
     text-align: center;
     font-size: 25px;
@@ -87,8 +90,38 @@ body {
    
    #container {
     min-width: 100%;
-    min-height: 100vh;
     margin: auto;
-    margin-top: 35%;
+    overflow: hidden;
    }
 }
+
+@media (max-width: 576px) {
+   
+    #container {
+     min-width: 100%;
+     margin: auto;
+     overflow: hidden;
+     min-height: 100vh;
+     font-size: 20px;
+    }
+
+    .dir {
+        padding-right: 42px;
+    }
+ }
+
+ @media (max-width: 350px){
+    #container {
+        min-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        min-height: 100vh;
+        font-size: 14px;
+        overflow: hidden;
+       }
+
+       .dir {
+        padding-right: 70px;
+        margin: -20px;
+    }
+ }
