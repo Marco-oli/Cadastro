@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    background-color: #DCDCDC;
+}
+
+
+/* Ids */
+
+#container {
+    color: #696969;
+    background-color: #fff;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 40%;
+    height: 650px;
+    margin: auto;
+    margin-top: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 60px;
+    box-shadow: 2px 2px 5px  black;
+    text-shadow: 1px 1px 2px black;
+}
+
+#cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+#corpo input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #696969;
+}
+
+#btn {
+    width: 120px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    position: absolute;
+    margin-left: -50px;
+}
+
+#MsgErro {
+    font-size: 16px;
+
+}
+
+#radio {
+    display: flex;
+    justify-content: center;
+    padding-left: 90px;
+} 
+
+#radio input {
+    margin-left: -20px;
+}
+
+/* Classes */ 
+
+.mdi-book-open-page-variant {
+    font-size: 48px;
+}
+
+.label {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150px;
+    padding-left: 15px;
+}
+
+@media (max-width: 720px) {
+   
+   #container {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    margin-top: 35%;
+   }
+}
